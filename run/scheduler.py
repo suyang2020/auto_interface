@@ -113,12 +113,12 @@ def get_authorization():
     #
     # headers = {"Content-Type": "application/json"}
     # data = {
-    #     "accountNo": "shop15231882752",
-    #     "password": "shop15231882752",
-    #     "validCode": "123",
-    #     "validCodeReqNo": "123",
-    #     "userType": "ADMIN",
-    #     "loginType": "PASSWORD",
+    #     "accountNo": "shop152",
+    #     "password": "shop152",
+    #     "validCode": "",
+    #     "validCodeReqNo": "",
+    #     "userType": "",
+    #     "loginType": "",
     #     "device": "PC"
     # }
     #
