@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<sample t="28" it="0" lt="0" ct="0" ts="1751595492242" s="true" lb="直播" rc="200" rm="OK" tn="直播后台管理 1-1" dt="text" de="" by="0" sby="0" ng="1" na="1">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <samplerData class="java.lang.String">vars.put(&quot;systemName&quot;,args[0]);</samplerData>
+</sample>
+<sample t="2" it="0" lt="0" ct="0" ts="1751595492283" s="true" lb="直播后台管理接口" rc="200" rm="OK" tn="直播后台管理 1-1" dt="text" de="" by="0" sby="0" ng="1" na="1">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <samplerData class="java.lang.String">vars.put(&quot;functionModule&quot;,args[0]);</samplerData>
+</sample>
+<httpSample t="283" it="0" lt="276" ct="52" ts="1751595492385" s="true" lb="测试环境登录获取token_直播后台管理_直播后台管理接口" rc="200" rm="" tn="直播后台管理 1-1" dt="text" de="UTF-8" by="10570" sby="424" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, PUT, GET, OPTIONS, DELETE
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Set-Cookie: Authorization=RaOM5KqHhVOek3YvqsYrWhOsufexpFKyRsqdItvTk1TQnyi5SouPYAqH4zG30QFfuVAEHSSHwQjIJKcPXCicv9ZpCwmSKBqFrIb2oZk4kPkmKzdwez0BXEGFarSXBaDG; Max-Age=172800; Expires=Sun, 6 Jul 2025 10:19:35 +0800; Path=/
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 04 Jul 2025 02:19:35 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+content-type: application/json;charset=UTF-8
+authorization: Bearer ${token1}
+Content-Length: 193
+Host: 111.172.196.67:11002
+User-Agent: Apache-HttpClient/4.5.14 (Java/1.8.0_144)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:&quot;20001&quot;,&quot;success&quot;:true,&quot;message&quot;:&quot;成功&quot;,&quot;data&quot;:{&quot;token&quot;:&quot;RaOM5KqHhVOek3YvqsYrWhOsufexpFKyRsqdItvTk1TQnyi5SouPYAqH4zG30QFfuVAEHSSHwQjIJKcPXCicv9ZpCwmSKBqFrIb2oZk4kPkmKzdwez0BXEGFarSXBaDG&quot;,&quot;userInfo&quot;:{&quot;userId&quot;:&quot;391&quot;,&quot;avatar&quot;:&quot;&quot;,&quot;account&quot;:&quot;shop18510001000&quot;,&quot;name&quot;:&quot;18510001000&quot;,&quot;nickName&quot;:&quot;18510001000&quot;,&quot;deptId&quot;:null,&quot;email&quot;:&quot;&quot;,&quot;mobile&quot;:&quot;18510001000&quot;,&quot;password&quot;:&quot;&quot;,&quot;isHavePassword&quot;:null,&quot;isHaveMobile&quot;:null,&quot;tenantId&quot;:null,&quot;saType&quot;:&quot;PC&quot;,&quot;permissions&quot;:[&quot;flow:flowPage:list&quot;,&quot;flowRechargeConfig:flowRechargeConfig:query&quot;,&quot;shop:shopcategory:remove&quot;,&quot;live:classify:edit&quot;,&quot;drama:drama:add&quot;,&quot;goods:hot:query&quot;,&quot;order:payment:list&quot;,&quot;goods:brand:add&quot;,&quot;groupActivityProd:groupActivityProd:query&quot;,&quot;order:logistics:query&quot;,&quot;drama:dramaepisode:add&quot;,&quot;system:user:query&quot;,&quot;appVersion:appVersion:list&quot;,&quot;biz:user:query&quot;,&quot;zeroActivityProd:zeroActivityProd:edit&quot;,&quot;system:role:remove&quot;,&quot;flowRechargeConfig:flowRechargeConfig:list&quot;,&quot;wq:post:list&quot;,&quot;extra:channel:query&quot;,&quot;live:gift:remove&quot;,&quot;activity:type:list&quot;,&quot;goods:hot:add&quot;,&quot;shop:shopentry:export&quot;,&quot;shop:shoplabel:export&quot;,&quot;shop:shopapply:edit&quot;,&quot;presaleActivityProd:presaleActivityProd:edit&quot;,&quot;user:search:list&quot;,&quot;luckActivity:luckActivity:list&quot;,&quot;order:sell:import&quot;,&quot;wq:post:add&quot;,&quot;zb:addr:list&quot;,&quot;presaleActivityProd:presaleActivityProd:add&quot;,&quot;drama:drama:remove&quot;,&quot;goods:brand:query&quot;,&quot;shop:shoplabel:remove&quot;,&quot;monitor:logininfor:list&quot;,&quot;goods:category:add&quot;,&quot;shop:shopentry:edit&quot;,&quot;goods:label:add&quot;,&quot;biz:cancel:query&quot;,&quot;luckActivityRecord:luckActivityRecord:list&quot;,&quot;luckActivityRecord:luckActivityRecord:export&quot;,&quot;help:problem:edit&quot;,&quot;advert:banner:export&quot;,&quot;zb:topic:query&quot;,&quot;zb:addr:remove&quot;,&quot;drama:drama:edit&quot;,&quot;shop:shop:list&quot;,&quot;goods:hot:remove&quot;,&quot;seckill:seckilltime:remove&quot;,&quot;shop:shopqc:add&quot;,&quot;luckActivityRecord:luckActivityRecord:query&quot;,&quot;goods:category:query&quot;,&quot;biz:user:realNameAuthentication&quot;,&quot;goods:goods:add&quot;,&quot;system:config:list&quot;,&quot;user:feedback:edit&quot;,&quot;zb:seckill:list&quot;,&quot;zb:addr:add&quot;,&quot;groupActivityProd:groupActivityProd:add&quot;,&quot;study:study:export&quot;,&quot;system:user:edit&quot;,&quot;advert:banner:query&quot;,&quot;shop:shopentry:remove&quot;,&quot;report:report:list&quot;,&quot;shop:shop:export&quot;,&quot;goods:brand:export&quot;,&quot;shop:shoplabel:list&quot;,&quot;thali:sysdetail:edit&quot;,&quot;monitor:operlog:remove&quot;,&quot;video:recommendcategory:query&quot;,&quot;shop:shopcategory:export&quot;,&quot;order:cancelcause:edit&quot;,&quot;statistics:goods:cate&quot;,&quot;zeroActivityProd:zeroActivityProd:add&quot;,&quot;user:search:export&quot;,&quot;system:menu:remove&quot;,&quot;system:dict:add&quot;,&quot;help:type:export&quot;,&quot;statistics:user:list&quot;,&quot;help:problem:query&quot;,&quot;study:study:query&quot;,&quot;goods:goods:edit&quot;,&quot;order:delivery:list&quot;,&quot;live:live:remove&quot;,&quot;goods:label:list&quot;,&quot;goods:brand:edit&quot;,&quot;extra:templatefreight:list&quot;,&quot;groupActivityProd:groupActivityProd:edit&quot;,&quot;help:type:add&quot;,&quot;system:role:export&quot;,&quot;zeroActivityProd:zeroActivityProd:remove&quot;,&quot;monitor:logininfor:unlock&quot;,&quot;drama:dramaepisode:list&quot;,&quot;video:video:add&quot;,&quot;zeroActivityProd:zeroActivityProd:export&quot;,&quot;presaleActivityProd:presaleActivityProd:list&quot;,&quot;video:recommendcategory:export&quot;,&quot;shop:shoplabel:add&quot;,&quot;live:live:export&quot;,&quot;user:feedback:query&quot;,&quot;wq:post:edit&quot;,&quot;goods:category:edit&quot;,&quot;coupon:coupontype:edit&quot;,&quot;monitor:operlog:export&quot;,&quot;extra:channel:remove&quot;,&quot;help:type:remove&quot;,&quot;thali:sys:query&quot;,&quot;extra:channel:add&quot;,&quot;activity:type:add&quot;,&quot;study:apply:remove&quot;,&quot;appVersion:appVersion:edit&quot;,&quot;order:logistics:export&quot;,&quot;statistics:goods:sku&quot;,&quot;flowRechargeConfig:flowRechargeConfig:edit&quot;,&quot;system:user:add&quot;,&quot;order:payment:refund&quot;,&quot;system:notice:remove&quot;,&quot;shop:shopapply:list&quot;,&quot;biz:user:list&quot;,&quot;shop:shopqc:export&quot;,&quot;study:study:edit&quot;,&quot;groupActivityProd:groupActivityProd:list&quot;,&quot;extra:template:send-sms&quot;,&quot;biz:user:add&quot;,&quot;shop:shop:remove&quot;,&quot;shop:shopqc:query&quot;,&quot;system:dict:list&quot;,&quot;live:live:add&quot;,&quot;advert:banner:list&quot;,&quot;luckActivityRecord:luckActivityRecord:add&quot;,&quot;biz:user:export&quot;,&quot;advert:banner:add&quot;,&quot;help:problem:add&quot;,&quot;goods:goods:batchOn&quot;,&quot;system:notice:list&quot;,&quot;advert:banner:remove&quot;,&quot;live:live:start&quot;,&quot;zb:seckill:add&quot;,&quot;luckActivityRecord:luckActivityRecord:edit&quot;,&quot;question:question:remove&quot;,&quot;thali:sysdetail:remove&quot;,&quot;extra:log:list&quot;,&quot;activity:type:remove&quot;,&quot;drama:dramaepisode:query&quot;,&quot;wq:post:remove&quot;,&quot;seckill:seckilltime:export&quot;,&quot;zb:addr:edit&quot;,&quot;help:type:query&quot;,&quot;question:question:export&quot;,&quot;order:cancelcause:query&quot;,&quot;system:dict:export&quot;,&quot;activity:type:query&quot;,&quot;luckActivity:luckActivity:edit&quot;,&quot;shop:shoplabel:edit&quot;,&quot;goods:hot:list&quot;,&quot;live:gift:export&quot;,&quot;biz:user:remove&quot;,&quot;system:config:export&quot;,&quot;extra:template:remove&quot;,&quot;order:cancelcause:list&quot;,&quot;shop:shopapply:export&quot;,&quot;goods:goods:list&quot;,&quot;zb:warehouse:edit&quot;,&quot;drama:drama:list&quot;,&quot;monitor:operlog:list&quot;,&quot;order:sell:cancel&quot;,&quot;order:logistics:edit&quot;,&quot;presaleActivityProd:presaleActivityProd:export&quot;,&quot;monitor:server:list&quot;,&quot;extra:overview:view&quot;,&quot;monitor:logininfor:export&quot;,&quot;goods:goods:batchOff&quot;,&quot;order:sell:export&quot;,&quot;live:live:query&quot;,&quot;luckActivity:luckActivity:query&quot;,&quot;video:recommendcategory:list&quot;,&quot;order:sell:orders&quot;,&quot;live:live:edit&quot;,&quot;monitor:cache:list&quot;,&quot;question:question:edit&quot;,&quot;extra:log:query&quot;,&quot;order:sell:query&quot;,&quot;study:apply:list&quot;,&quot;extra:template:query&quot;,&quot;question:question:add&quot;,&quot;statistics:goods:list&quot;,&quot;live:classify:list&quot;,&quot;system:role:query&quot;,&quot;order:refund:audit&quot;,&quot;live:classify:query&quot;,&quot;system:menu:edit&quot;,&quot;system:config:remove&quot;,&quot;system:user:resetPwd&quot;,&quot;help:type:edit&quot;,&quot;wq:post:export&quot;,&quot;monitor:druid:list&quot;,&quot;system:menu:query&quot;,&quot;finance:goods:list&quot;,&quot;system:menu:list&quot;,&quot;shop:shopapply:remove&quot;,&quot;coupon:coupontype:remove&quot;,&quot;thali:sysdetail:query&quot;,&quot;live:gift:edit&quot;,&quot;system:dict:edit&quot;,&quot;monitor:logininfor:remove&quot;,&quot;extra:channel:list&quot;,&quot;statistics:goods:brand&quot;,&quot;goods:category:list&quot;,&quot;system:user:export&quot;,&quot;shop:shop:add&quot;,&quot;shop:shoplabel:query&quot;,&quot;zb:topic:export&quot;,&quot;thali:sysdetail:export&quot;,&quot;goods:label:edit&quot;,&quot;shop:shopqc:edit&quot;,&quot;drama:drama:query&quot;,&quot;help:problem:remove&quot;,&quot;goods:category:remove&quot;,&quot;shop:shopqc:remove&quot;,&quot;zb:addr:query&quot;,&quot;system:dict:query&quot;,&quot;order:payment:export&quot;,&quot;system:notice:edit&quot;,&quot;shop:shopapply:query&quot;,&quot;presaleActivityProd:presaleActivityProd:remove&quot;,&quot;biz:cancel:export&quot;,&quot;order:refund:query&quot;,&quot;thali:sysdetail:list&quot;,&quot;coupon:coupontype:list&quot;,&quot;goods:hot:edit&quot;,&quot;luckActivity:luckActivity:add&quot;,&quot;order:logistics:list&quot;,&quot;video:video:query&quot;,&quot;shop:shopcategory:add&quot;,&quot;goods:label:export&quot;,&quot;thali:sys:list&quot;,&quot;presaleActivityProd:presaleActivityProd:query&quot;,&quot;shop:shopcategory:list&quot;,&quot;shop:shopcategory:query&quot;,&quot;system:config:edit&quot;,&quot;thali:sys:add&quot;,&quot;user:feedback:list&quot;,&quot;extra:template:edit&quot;,&quot;order:sell:delivery&quot;,&quot;user:search:query&quot;,&quot;shop:shopApply:audit&quot;,&quot;system:menu:add&quot;,&quot;question:question:query&quot;,&quot;order:refund:export&quot;,&quot;order:delivery:query&quot;,&quot;system:dict:remove&quot;,&quot;goods:goods:query&quot;,&quot;shop:shopapply:add&quot;,&quot;zb:seckill:remove&quot;,&quot;system:role:edit&quot;,&quot;help:problem:export&quot;,&quot;system:config:query&quot;,&quot;appVersion:appVersion:query&quot;,&quot;system:role:add&quot;,&quot;monitor:logininfor:query&quot;,&quot;biz:cancel:list&quot;,&quot;activity:type:export&quot;,&quot;biz:user:updateUserStatus&quot;,&quot;luckActivity:luckActivity:remove&quot;,&quot;biz:user:edit&quot;,&quot;video:recommendcategory:remove&quot;,&quot;shop:shopentry:add&quot;,&quot;goods:brand:remove&quot;,&quot;study:study:remove&quot;,&quot;order:refund:list&quot;,&quot;system:config:add&quot;,&quot;seckill:seckilltime:edit&quot;,&quot;report:report:remove&quot;,&quot;appVersion:appVersion:add&quot;,&quot;video:recommendcategory:edit&quot;,&quot;video:video:list&quot;,&quot;question:question:list&quot;,&quot;live:live:list&quot;,&quot;zb:topic:edit&quot;,&quot;live:classify:add&quot;,&quot;shop:shopentry:query&quot;,&quot;goods:hot:export&quot;,&quot;zb:warehouse:query&quot;,&quot;luckActivity:luckActivity:export&quot;,&quot;study:study:add&quot;,&quot;extra:channel:edit&quot;,&quot;drama:dramaepisode:edit&quot;,&quot;thali:sys:remove&quot;,&quot;goods:goods:copy&quot;,&quot;system:mask:role&quot;,&quot;seckill:seckilltime:list&quot;,&quot;order:sell:list&quot;,&quot;drama:dramaepisode:export&quot;,&quot;shop:shopcategory:edit&quot;,&quot;video:video:export&quot;,&quot;help:problem:list&quot;,&quot;biz:cancel:remove&quot;,&quot;seckill:seckilltime:add&quot;,&quot;zb:seckill:query&quot;,&quot;shop:shopentry:list&quot;,&quot;statistics:goods:goods&quot;,&quot;statistics:order:list&quot;,&quot;zb:seckill:export&quot;,&quot;coupon:coupontype:add&quot;,&quot;live:gift:list&quot;,&quot;video:recommendcategory:add&quot;,&quot;flowRechargeConfig:flowRechargeConfig:export&quot;,&quot;order:cancelcause:add&quot;,&quot;goods:label:remove&quot;,&quot;live:gift:query&quot;,&quot;luckActivityRecord:luckActivityRecord:remove&quot;,&quot;shop:shop:edit&quot;,&quot;zeroActivityProd:zeroActivityProd:query&quot;,&quot;system:notice:query&quot;,&quot;zb:warehouse:list&quot;,&quot;goods:goods:export&quot;,&quot;help:type:list&quot;,&quot;extra:template:add&quot;,&quot;activity:type:edit&quot;,&quot;live:gift:add&quot;,&quot;drama:drama:export&quot;,&quot;goods:goods:remove&quot;,&quot;flowRechargeConfig:flowRechargeConfig:add&quot;,&quot;zeroActivityProd:zeroActivityProd:list&quot;,&quot;goods:label:query&quot;,&quot;zb:warehouse:add&quot;,&quot;system:user:remove&quot;,&quot;video:video:remove&quot;,&quot;system:role:list&quot;,&quot;flowRechargeConfig:flowRechargeConfig:remove&quot;,&quot;system:user:import&quot;,&quot;biz:cancel:edit&quot;,&quot;zb:topic:remove&quot;,&quot;biz:cancel:add&quot;,&quot;zb:addr:export&quot;,&quot;shop:shopqc:list&quot;,&quot;coupon:coupontype:export&quot;,&quot;goods:category:export&quot;,&quot;order:cancelcause:remove&quot;,&quot;coupon:coupontype:query&quot;,&quot;thali:sys:export&quot;,&quot;shop:shop:query&quot;,&quot;thali:sys:edit&quot;,&quot;wq:post:query&quot;,&quot;zb:seckill:edit&quot;,&quot;seckill:seckilltime:query&quot;,&quot;monitor:operlog:query&quot;,&quot;system:user:list&quot;,&quot;order:cancelcause:export&quot;,&quot;order:delivery:export&quot;,&quot;groupActivityProd:groupActivityProd:export&quot;,&quot;zb:warehouse:export&quot;,&quot;zb:topic:list&quot;,&quot;system:notice:add&quot;,&quot;live:classify:export&quot;,&quot;advert:banner:edit&quot;,&quot;thali:sysdetail:add&quot;,&quot;video:video:edit&quot;,&quot;zb:warehouse:remove&quot;,&quot;live:classify:remove&quot;,&quot;groupActivityProd:groupActivityProd:remove&quot;,&quot;zb:topic:add&quot;,&quot;study:study:list&quot;,&quot;goods:brand:list&quot;,&quot;shop:shop:shopRecommend&quot;],&quot;roleCodes&quot;:[&quot;shop&quot;],&quot;roleList&quot;:[{&quot;flag&quot;:true,&quot;remark&quot;:&quot;&quot;,&quot;dataScope&quot;:&quot;1&quot;,&quot;roleSort&quot;:1,&quot;deptCheckStrictly&quot;:false,&quot;isDeleted&quot;:false,&quot;createTime&quot;:&quot;2024-04-30 17:53:41&quot;,&quot;menuCheckStrictly&quot;:true,&quot;roleName&quot;:&quot;店铺&quot;,&quot;roleKey&quot;:&quot;shop&quot;,&quot;id&quot;:&quot;15&quot;,&quot;status&quot;:1}],&quot;adminFlag&quot;:false,&quot;adminZbFlag&quot;:false,&quot;nation&quot;:&quot;&quot;,&quot;userRole&quot;:null,&quot;defaultShopId&quot;:null},&quot;bindMobile&quot;:null,&quot;openId&quot;:&quot;&quot;,&quot;source&quot;:&quot;&quot;,&quot;invitationCode&quot;:&quot;&quot;,&quot;tenCenImSig&quot;:&quot;eJwtjcEKgkAURf9l1iFv5jnOKLQwghKyoizcWo7yykRUJIv*PVGX95zLvV8W7c5WZ2rmMWEBW4yZUlO2lNGIJbgKUTqoNAchlSvmVpM*k6qilHncAQDNXeCTMe*KajNwJfRgJtjSa0SSI6LtiHmE8uGj7*63sCxPx03e*wZtFTQqC-qo3Sbh6rAuLp94T8XjqmN-yX5-hegzVw__&quot;,&quot;nation&quot;:&quot;&quot;,&quot;isSetPayPassword&quot;:&quot;&quot;,&quot;userAppAuthResult&quot;:null},&quot;version&quot;:&quot;&quot;,&quot;sign&quot;:&quot;&quot;,&quot;errors&quot;:null,&quot;time&quot;:&quot;2025-07-04 10:19:35&quot;}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;accountNo&quot;:&quot;shop18510001000&quot;,&#xd;
+	&quot;password&quot;:&quot;shop18510001000&quot;,&#xd;
+	&quot;validCode&quot;:&quot;1&quot;,&#xd;
+	&quot;validCodeReqNo&quot;:&quot;513666672591666666&quot;,&#xd;
+	&quot;userType&quot;:&quot;ADMIN&quot;,&#xd;
+	&quot;loginType&quot;:&quot;PASSWORD&quot;,&#xd;
+	&quot;device&quot;:&quot;PC&quot;&#xd;
+}</queryString>
+  <java.net.URL>http://111.172.196.67:11002/login</java.net.URL>
+</httpSample>
+<httpSample t="123" it="0" lt="123" ct="0" ts="1751595492704" s="true" lb="新增直播分类_直播后台管理_直播后台管理接口" rc="200" rm="" tn="直播后台管理 1-1" dt="text" de="UTF-8" by="868" sby="452" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, PUT, GET, OPTIONS, DELETE
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 04 Jul 2025 02:19:35 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+content-type: application/json;charset=UTF-8
+authorization: Bearer RaOM5KqHhVOek3YvqsYrWhOsufexpFKyRsqdItvTk1TQnyi5SouPYAqH4zG30QFfuVAEHSSHwQjIJKcPXCicv9ZpCwmSKBqFrIb2oZk4kPkmKzdwez0BXEGFarSXBaDG
+Content-Length: 91
+Host: 111.172.196.67:11002
+User-Agent: Apache-HttpClient/4.5.14 (Java/1.8.0_144)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:&quot;20001&quot;,&quot;success&quot;:true,&quot;message&quot;:&quot;成功&quot;,&quot;data&quot;:{&quot;id&quot;:&quot;541563396273946625&quot;,&quot;classifyName&quot;:&quot;测试sy01&quot;,&quot;picture&quot;:&quot;&quot;,&quot;sort&quot;:0,&quot;status&quot;:1,&quot;createTime&quot;:&quot;2025-07-04 10:19:35&quot;,&quot;updateTime&quot;:null,&quot;creator&quot;:&quot;391&quot;,&quot;modifier&quot;:null,&quot;isDeleted&quot;:false,&quot;remark&quot;:&quot;&quot;},&quot;version&quot;:&quot;&quot;,&quot;sign&quot;:&quot;&quot;,&quot;errors&quot;:null,&quot;time&quot;:&quot;2025-07-04 10:19:35&quot;}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;id&quot;:null,&quot;classifyName&quot;:&quot;测试sy01&quot;,&quot;sort&quot;:0,&quot;status&quot;:1,&quot;createTime&quot;:null,&quot;remark&quot;:null}</queryString>
+  <java.net.URL>http://111.172.196.67:11002/live/classify/add</java.net.URL>
+</httpSample>
+<httpSample t="83" it="0" lt="83" ct="0" ts="1751595492829" s="true" lb="直播分类查询_直播后台管理_直播后台管理接口" rc="200" rm="" tn="直播后台管理 1-1" dt="text" de="UTF-8" by="940" sby="397" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, PUT, GET, OPTIONS, DELETE
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 04 Jul 2025 02:19:35 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+content-type: application/json;charset=UTF-8
+authorization: Bearer RaOM5KqHhVOek3YvqsYrWhOsufexpFKyRsqdItvTk1TQnyi5SouPYAqH4zG30QFfuVAEHSSHwQjIJKcPXCicv9ZpCwmSKBqFrIb2oZk4kPkmKzdwez0BXEGFarSXBaDG
+Host: 111.172.196.67:11002
+User-Agent: Apache-HttpClient/4.5.14 (Java/1.8.0_144)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:&quot;20001&quot;,&quot;success&quot;:true,&quot;message&quot;:&quot;成功&quot;,&quot;data&quot;:{&quot;records&quot;:[{&quot;id&quot;:&quot;541563396273946625&quot;,&quot;classifyName&quot;:&quot;测试sy01&quot;,&quot;picture&quot;:&quot;&quot;,&quot;sort&quot;:0,&quot;status&quot;:1,&quot;createTime&quot;:&quot;2025-07-04 10:19:35&quot;,&quot;remark&quot;:&quot;&quot;}],&quot;total&quot;:1,&quot;size&quot;:10,&quot;current&quot;:1,&quot;orders&quot;:[],&quot;optimizeCountSql&quot;:true,&quot;searchCount&quot;:true,&quot;countId&quot;:&quot;&quot;,&quot;maxLimit&quot;:null,&quot;pages&quot;:1},&quot;version&quot;:&quot;&quot;,&quot;sign&quot;:&quot;&quot;,&quot;errors&quot;:null,&quot;time&quot;:&quot;2025-07-04 10:19:35&quot;}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://111.172.196.67:11002/live/classify/page?classifyName=测试sy&amp;pageNum=1&amp;pageSize=10</java.net.URL>
+</httpSample>
+<httpSample t="71" it="0" lt="71" ct="0" ts="1751595492914" s="true" lb="修改直播分类_直播后台管理_直播后台管理接口" rc="200" rm="" tn="直播后台管理 1-1" dt="text" de="UTF-8" by="859" sby="473" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, PUT, GET, OPTIONS, DELETE
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 04 Jul 2025 02:19:35 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+content-type: application/json;charset=UTF-8
+authorization: Bearer RaOM5KqHhVOek3YvqsYrWhOsufexpFKyRsqdItvTk1TQnyi5SouPYAqH4zG30QFfuVAEHSSHwQjIJKcPXCicv9ZpCwmSKBqFrIb2oZk4kPkmKzdwez0BXEGFarSXBaDG
+Content-Length: 110
+Host: 111.172.196.67:11002
+User-Agent: Apache-HttpClient/4.5.14 (Java/1.8.0_144)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:&quot;20001&quot;,&quot;success&quot;:true,&quot;message&quot;:&quot;成功&quot;,&quot;data&quot;:{&quot;id&quot;:&quot;541563396273946625&quot;,&quot;classifyName&quot;:&quot;测试sy直播分类&quot;,&quot;picture&quot;:&quot;&quot;,&quot;sort&quot;:0,&quot;status&quot;:1,&quot;createTime&quot;:null,&quot;updateTime&quot;:null,&quot;creator&quot;:null,&quot;modifier&quot;:null,&quot;isDeleted&quot;:null,&quot;remark&quot;:&quot;&quot;},&quot;version&quot;:&quot;&quot;,&quot;sign&quot;:&quot;&quot;,&quot;errors&quot;:null,&quot;time&quot;:&quot;2025-07-04 10:19:35&quot;}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;id&quot;:&quot;541563396273946625&quot;,&quot;classifyName&quot;:&quot;测试sy直播分类&quot;,&quot;picture&quot;:&quot;&quot;,&quot;sort&quot;:0,&quot;status&quot;:1,&quot;remark&quot;:&quot;&quot;}</queryString>
+  <java.net.URL>http://111.172.196.67:11002/live/classify/edit</java.net.URL>
+</httpSample>
+<httpSample t="96" it="0" lt="96" ct="0" ts="1751595492987" s="true" lb="新增一级素材分类_直播后台管理_直播后台管理接口" rc="200" rm="" tn="直播后台管理 1-1" dt="text" de="UTF-8" by="1003" sby="461" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, PUT, GET, OPTIONS, DELETE
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 04 Jul 2025 02:19:35 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+content-type: application/json;charset=UTF-8
+authorization: Bearer RaOM5KqHhVOek3YvqsYrWhOsufexpFKyRsqdItvTk1TQnyi5SouPYAqH4zG30QFfuVAEHSSHwQjIJKcPXCicv9ZpCwmSKBqFrIb2oZk4kPkmKzdwez0BXEGFarSXBaDG
+Content-Length: 89
+Host: 111.172.196.67:11002
+User-Agent: Apache-HttpClient/4.5.14 (Java/1.8.0_144)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:&quot;20001&quot;,&quot;success&quot;:true,&quot;message&quot;:&quot;成功&quot;,&quot;data&quot;:{&quot;id&quot;:&quot;541563397477711872&quot;,&quot;classificationName&quot;:&quot;测试sy一级分类&quot;,&quot;classificationCode&quot;:&quot;15162f11-fdaa-4a58-8a59-f52d7bfaf1ac&quot;,&quot;status&quot;:1,&quot;classificationParentCode&quot;:&quot;0&quot;,&quot;creator&quot;:null,&quot;createTime&quot;:null,&quot;modifier&quot;:null,&quot;updateTime&quot;:null,&quot;isDeleted&quot;:null,&quot;version&quot;:null,&quot;tenantId&quot;:null,&quot;remark&quot;:&quot;&quot;,&quot;associatedUser&quot;:&quot;391&quot;,&quot;sorting&quot;:null},&quot;version&quot;:&quot;&quot;,&quot;sign&quot;:&quot;&quot;,&quot;errors&quot;:null,&quot;time&quot;:&quot;2025-07-04 10:19:35&quot;}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;classificationName&quot;:&quot;测试sy一级分类&quot;,&quot;status&quot;:&quot;1&quot;,&quot;classificationParentCode&quot;:&quot;0&quot;}</queryString>
+  <java.net.URL>http://111.172.196.67:11002/warehouse/classification/add</java.net.URL>
+</httpSample>
+<httpSample t="65" it="0" lt="65" ct="0" ts="1751595493086" s="true" lb="新增二级素材分类_直播后台管理_直播后台管理接口" rc="200" rm="" tn="直播后台管理 1-1" dt="text" de="UTF-8" by="1038" sby="501" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, PUT, GET, OPTIONS, DELETE
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 04 Jul 2025 02:19:35 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+content-type: application/json;charset=UTF-8
+authorization: Bearer RaOM5KqHhVOek3YvqsYrWhOsufexpFKyRsqdItvTk1TQnyi5SouPYAqH4zG30QFfuVAEHSSHwQjIJKcPXCicv9ZpCwmSKBqFrIb2oZk4kPkmKzdwez0BXEGFarSXBaDG
+Content-Length: 128
+Host: 111.172.196.67:11002
+User-Agent: Apache-HttpClient/4.5.14 (Java/1.8.0_144)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:&quot;20001&quot;,&quot;success&quot;:true,&quot;message&quot;:&quot;成功&quot;,&quot;data&quot;:{&quot;id&quot;:&quot;541563397729370113&quot;,&quot;classificationName&quot;:&quot;测试sy二级分类&quot;,&quot;classificationCode&quot;:&quot;c3644373-9d40-4620-8232-4923fe4af0fa&quot;,&quot;status&quot;:1,&quot;classificationParentCode&quot;:&quot;15162f11-fdaa-4a58-8a59-f52d7bfaf1ac&quot;,&quot;creator&quot;:null,&quot;createTime&quot;:null,&quot;modifier&quot;:null,&quot;updateTime&quot;:null,&quot;isDeleted&quot;:null,&quot;version&quot;:null,&quot;tenantId&quot;:null,&quot;remark&quot;:&quot;&quot;,&quot;associatedUser&quot;:&quot;391&quot;,&quot;sorting&quot;:null},&quot;version&quot;:&quot;&quot;,&quot;sign&quot;:&quot;&quot;,&quot;errors&quot;:null,&quot;time&quot;:&quot;2025-07-04 10:19:35&quot;}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;classificationName&quot;:&quot;测试sy二级分类&quot;,&#xd;
+&quot;status&quot;:&quot;1&quot;,&#xd;
+&quot;classificationParentCode&quot;:&quot;15162f11-fdaa-4a58-8a59-f52d7bfaf1ac&quot;}</queryString>
+  <java.net.URL>http://111.172.196.67:11002/warehouse/classification/add</java.net.URL>
+</httpSample>
+<httpSample t="65" it="0" lt="65" ct="0" ts="1751595493153" s="true" lb="新增三级素材分类_直播后台管理_直播后台管理接口" rc="200" rm="" tn="直播后台管理 1-1" dt="text" de="UTF-8" by="1038" sby="501" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, PUT, GET, OPTIONS, DELETE
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 04 Jul 2025 02:19:35 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+content-type: application/json;charset=UTF-8
+authorization: Bearer RaOM5KqHhVOek3YvqsYrWhOsufexpFKyRsqdItvTk1TQnyi5SouPYAqH4zG30QFfuVAEHSSHwQjIJKcPXCicv9ZpCwmSKBqFrIb2oZk4kPkmKzdwez0BXEGFarSXBaDG
+Content-Length: 128
+Host: 111.172.196.67:11002
+User-Agent: Apache-HttpClient/4.5.14 (Java/1.8.0_144)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:&quot;20001&quot;,&quot;success&quot;:true,&quot;message&quot;:&quot;成功&quot;,&quot;data&quot;:{&quot;id&quot;:&quot;541563398056525824&quot;,&quot;classificationName&quot;:&quot;测试sy三级分类&quot;,&quot;classificationCode&quot;:&quot;affea4e2-d05b-49cb-b724-74051340f790&quot;,&quot;status&quot;:1,&quot;classificationParentCode&quot;:&quot;c3644373-9d40-4620-8232-4923fe4af0fa&quot;,&quot;creator&quot;:null,&quot;createTime&quot;:null,&quot;modifier&quot;:null,&quot;updateTime&quot;:null,&quot;isDeleted&quot;:null,&quot;version&quot;:null,&quot;tenantId&quot;:null,&quot;remark&quot;:&quot;&quot;,&quot;associatedUser&quot;:&quot;391&quot;,&quot;sorting&quot;:null},&quot;version&quot;:&quot;&quot;,&quot;sign&quot;:&quot;&quot;,&quot;errors&quot;:null,&quot;time&quot;:&quot;2025-07-04 10:19:35&quot;}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;classificationName&quot;:&quot;测试sy三级分类&quot;,&#xd;
+&quot;status&quot;:&quot;1&quot;,&#xd;
+&quot;classificationParentCode&quot;:&quot;c3644373-9d40-4620-8232-4923fe4af0fa&quot;}</queryString>
+  <java.net.URL>http://111.172.196.67:11002/warehouse/classification/add</java.net.URL>
+</httpSample>
+<httpSample t="62" it="0" lt="62" ct="0" ts="1751595493219" s="true" lb="修改素材分类_直播后台管理_直播后台管理接口" rc="200" rm="" tn="直播后台管理 1-1" dt="text" de="UTF-8" by="1000" sby="531" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, PUT, GET, OPTIONS, DELETE
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 04 Jul 2025 02:19:35 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+content-type: application/json;charset=UTF-8
+authorization: Bearer RaOM5KqHhVOek3YvqsYrWhOsufexpFKyRsqdItvTk1TQnyi5SouPYAqH4zG30QFfuVAEHSSHwQjIJKcPXCicv9ZpCwmSKBqFrIb2oZk4kPkmKzdwez0BXEGFarSXBaDG
+Content-Length: 157
+Host: 111.172.196.67:11002
+User-Agent: Apache-HttpClient/4.5.14 (Java/1.8.0_144)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:&quot;20001&quot;,&quot;success&quot;:true,&quot;message&quot;:&quot;成功&quot;,&quot;data&quot;:{&quot;id&quot;:&quot;541563398056525824&quot;,&quot;classificationName&quot;:&quot;测试sy三级分类2&quot;,&quot;classificationCode&quot;:&quot;&quot;,&quot;status&quot;:1,&quot;classificationParentCode&quot;:&quot;c3644373-9d40-4620-8232-4923fe4af0fa&quot;,&quot;creator&quot;:null,&quot;createTime&quot;:null,&quot;modifier&quot;:null,&quot;updateTime&quot;:null,&quot;isDeleted&quot;:null,&quot;version&quot;:null,&quot;tenantId&quot;:null,&quot;remark&quot;:&quot;&quot;,&quot;associatedUser&quot;:&quot;&quot;,&quot;sorting&quot;:null},&quot;version&quot;:&quot;&quot;,&quot;sign&quot;:&quot;&quot;,&quot;errors&quot;:null,&quot;time&quot;:&quot;2025-07-04 10:19:35&quot;}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;classificationName&quot;:&quot;测试sy三级分类2&quot;,&#xd;
+&quot;status&quot;:&quot;1&quot;,&#xd;
+&quot;classificationParentCode&quot;:&quot;c3644373-9d40-4620-8232-4923fe4af0fa&quot;,&#xd;
+&quot;id&quot;:&quot;541563398056525824&quot;}</queryString>
+  <java.net.URL>http://111.172.196.67:11002/warehouse/classification/edit</java.net.URL>
+</httpSample>
+<httpSample t="54" it="0" lt="54" ct="0" ts="1751595493283" s="true" lb="获取素材分类_直播后台管理_直播后台管理接口" rc="200" rm="" tn="直播后台管理 1-1" dt="text" de="UTF-8" by="960" sby="431" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, PUT, GET, OPTIONS, DELETE
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 04 Jul 2025 02:19:35 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+content-type: application/json;charset=UTF-8
+authorization: Bearer RaOM5KqHhVOek3YvqsYrWhOsufexpFKyRsqdItvTk1TQnyi5SouPYAqH4zG30QFfuVAEHSSHwQjIJKcPXCicv9ZpCwmSKBqFrIb2oZk4kPkmKzdwez0BXEGFarSXBaDG
+Host: 111.172.196.67:11002
+User-Agent: Apache-HttpClient/4.5.14 (Java/1.8.0_144)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:&quot;20001&quot;,&quot;success&quot;:true,&quot;message&quot;:&quot;成功&quot;,&quot;data&quot;:[{&quot;id&quot;:&quot;541563397729370113&quot;,&quot;classificationName&quot;:&quot;测试sy二级分类&quot;,&quot;classificationCode&quot;:&quot;c3644373-9d40-4620-8232-4923fe4af0fa&quot;,&quot;status&quot;:1,&quot;classificationParentCode&quot;:&quot;15162f11-fdaa-4a58-8a59-f52d7bfaf1ac&quot;,&quot;createTime&quot;:&quot;2025-07-04 10:19:35&quot;,&quot;remark&quot;:&quot;&quot;,&quot;associatedUser&quot;:&quot;391&quot;,&quot;sorting&quot;:null}],&quot;version&quot;:&quot;&quot;,&quot;sign&quot;:&quot;&quot;,&quot;errors&quot;:null,&quot;time&quot;:&quot;2025-07-04 10:19:35&quot;}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://111.172.196.67:11002/warehouse/classification/getClassificationList?classificationParentCode=15162f11-fdaa-4a58-8a59-f52d7bfaf1ac</java.net.URL>
+</httpSample>
+<httpSample t="90" it="0" lt="89" ct="0" ts="1751595493340" s="true" lb="新增图片素材_直播后台管理_直播后台管理接口" rc="200" rm="" tn="直播后台管理 1-1" dt="text" de="UTF-8" by="1140" sby="825" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, PUT, GET, OPTIONS, DELETE
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 04 Jul 2025 02:19:35 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+content-type: application/json;charset=UTF-8
+authorization: Bearer RaOM5KqHhVOek3YvqsYrWhOsufexpFKyRsqdItvTk1TQnyi5SouPYAqH4zG30QFfuVAEHSSHwQjIJKcPXCicv9ZpCwmSKBqFrIb2oZk4kPkmKzdwez0BXEGFarSXBaDG
+Content-Length: 464
+Host: 111.172.196.67:11002
+User-Agent: Apache-HttpClient/4.5.14 (Java/1.8.0_144)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:&quot;20001&quot;,&quot;success&quot;:true,&quot;message&quot;:&quot;成功&quot;,&quot;data&quot;:{&quot;id&quot;:&quot;541563398912163841&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;logo1024x1024.png&quot;,&quot;materialSource&quot;:null,&quot;materialTime&quot;:&quot;0&quot;,&quot;materialSize&quot;:&quot;279890&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;1&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/b5/1-20250415-b5e63eb8fc80409da955373bab297e31/b5e63eb8fc80409da955373bab297e31.png&quot;,&quot;createTime&quot;:&quot;2025-07-04 10:19:36&quot;,&quot;userId&quot;:391,&quot;shopId&quot;:4273,&quot;materialClassification&quot;:&quot;c3644373-9d40-4620-8232-4923fe4af0fa&quot;},&quot;version&quot;:&quot;&quot;,&quot;sign&quot;:&quot;&quot;,&quot;errors&quot;:null,&quot;time&quot;:&quot;2025-07-04 10:19:36&quot;}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;id&quot;:null,&quot;materialCover&quot;:null,&#xd;
+	&quot;materialTitle&quot;:&quot;logo1024x1024.png&quot;,&#xd;
+	&quot;materialSource&quot;:null,&#xd;
+	&quot;materialTime&quot;:0,&#xd;
+	&quot;materialSize&quot;:279890,&#xd;
+	&quot;materialRate&quot;:null,&#xd;
+	&quot;materialType&quot;:&quot;1&quot;,&#xd;
+	&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/b5/1-20250415-b5e63eb8fc80409da955373bab297e31/b5e63eb8fc80409da955373bab297e31.png&quot;,&#xd;
+	&quot;createTime&quot;:null,&#xd;
+	&quot;materialClassification&quot;:&quot;c3644373-9d40-4620-8232-4923fe4af0fa&quot;,&#xd;
+	&quot;shopId&quot;:4273&#xd;
+}</queryString>
+  <java.net.URL>http://111.172.196.67:11002/zb/warehouse/add</java.net.URL>
+</httpSample>
+<httpSample t="58" it="0" lt="58" ct="0" ts="1751595493431" s="true" lb="新增视频素材_直播后台管理_直播后台管理接口" rc="200" rm="" tn="直播后台管理 1-1" dt="text" de="UTF-8" by="1140" sby="825" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>JSON断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>JSON断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, PUT, GET, OPTIONS, DELETE
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 04 Jul 2025 02:19:35 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+content-type: application/json;charset=UTF-8
+authorization: Bearer RaOM5KqHhVOek3YvqsYrWhOsufexpFKyRsqdItvTk1TQnyi5SouPYAqH4zG30QFfuVAEHSSHwQjIJKcPXCicv9ZpCwmSKBqFrIb2oZk4kPkmKzdwez0BXEGFarSXBaDG
+Content-Length: 464
+Host: 111.172.196.67:11002
+User-Agent: Apache-HttpClient/4.5.14 (Java/1.8.0_144)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:&quot;20001&quot;,&quot;success&quot;:true,&quot;message&quot;:&quot;成功&quot;,&quot;data&quot;:{&quot;id&quot;:&quot;541563399201570816&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;1分半.mp4&quot;,&quot;materialSource&quot;:null,&quot;materialTime&quot;:&quot;96.41&quot;,&quot;materialSize&quot;:&quot;16914120&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;2&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/d1/1-20250415-d1feaf0b04b84ef098e2843152f159ab/d1feaf0b04b84ef098e2843152f159ab.mp4&quot;,&quot;createTime&quot;:&quot;2025-07-04 10:19:36&quot;,&quot;userId&quot;:391,&quot;shopId&quot;:4274,&quot;materialClassification&quot;:&quot;c3644373-9d40-4620-8232-4923fe4af0fa&quot;},&quot;version&quot;:&quot;&quot;,&quot;sign&quot;:&quot;&quot;,&quot;errors&quot;:null,&quot;time&quot;:&quot;2025-07-04 10:19:36&quot;}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;id&quot;:null,&quot;materialCover&quot;:null,&#xd;
+	&quot;materialTitle&quot;:&quot;1分半.mp4&quot;,&#xd;
+	&quot;materialSource&quot;:null,&#xd;
+	&quot;materialTime&quot;:96.41,&#xd;
+	&quot;materialSize&quot;:16914120,&#xd;
+	&quot;materialRate&quot;:null,&#xd;
+	&quot;materialType&quot;:&quot;2&quot;,&#xd;
+	&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/d1/1-20250415-d1feaf0b04b84ef098e2843152f159ab/d1feaf0b04b84ef098e2843152f159ab.mp4&quot;,&#xd;
+	&quot;createTime&quot;:null,&#xd;
+	&quot;materialClassification&quot;:&quot;c3644373-9d40-4620-8232-4923fe4af0fa&quot;,&#xd;
+	&quot;shopId&quot;:4274&#xd;
+}</queryString>
+  <java.net.URL>http://111.172.196.67:11002/zb/warehouse/add</java.net.URL>
+</httpSample>
+<httpSample t="100" it="0" lt="100" ct="0" ts="1751595493493" s="true" lb="查询图片素材_直播后台管理_直播后台管理接口" rc="200" rm="" tn="直播后台管理 1-1" dt="text" de="UTF-8" by="6291" sby="396" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, PUT, GET, OPTIONS, DELETE
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 04 Jul 2025 02:19:35 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+content-type: application/json;charset=UTF-8
+authorization: Bearer RaOM5KqHhVOek3YvqsYrWhOsufexpFKyRsqdItvTk1TQnyi5SouPYAqH4zG30QFfuVAEHSSHwQjIJKcPXCicv9ZpCwmSKBqFrIb2oZk4kPkmKzdwez0BXEGFarSXBaDG
+Host: 111.172.196.67:11002
+User-Agent: Apache-HttpClient/4.5.14 (Java/1.8.0_144)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:&quot;20001&quot;,&quot;success&quot;:true,&quot;message&quot;:&quot;成功&quot;,&quot;data&quot;:{&quot;records&quot;:[{&quot;id&quot;:&quot;541563398912163841&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;logo1024x1024.png&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;0&quot;,&quot;materialSize&quot;:&quot;279890&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;1&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/b5/1-20250415-b5e63eb8fc80409da955373bab297e31/b5e63eb8fc80409da955373bab297e31.png&quot;,&quot;createTime&quot;:&quot;2025-07-04 10:19:36&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4273,&quot;materialClassification&quot;:&quot;c3644373-9d40-4620-8232-4923fe4af0fa&quot;,&quot;classificationName&quot;:&quot;测试sy一级分类-测试sy二级分类&quot;},{&quot;id&quot;:&quot;519821783298375680&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;logo1024x1024.png&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;0&quot;,&quot;materialSize&quot;:&quot;279890&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;1&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/b5/1-20250415-b5e63eb8fc80409da955373bab297e31/b5e63eb8fc80409da955373bab297e31.png&quot;,&quot;createTime&quot;:&quot;2025-05-05 10:26:11&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4273,&quot;materialClassification&quot;:&quot;459e1d88-20b3-4690-8794-1f1ee84d739f&quot;,&quot;classificationName&quot;:&quot;测试sy一级分类-测试sy二级分类&quot;},{&quot;id&quot;:&quot;519459393348206593&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;logo1024x1024.png&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;0&quot;,&quot;materialSize&quot;:&quot;279890&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;1&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/b5/1-20250415-b5e63eb8fc80409da955373bab297e31/b5e63eb8fc80409da955373bab297e31.png&quot;,&quot;createTime&quot;:&quot;2025-05-04 10:26:10&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4273,&quot;materialClassification&quot;:&quot;02ed9545-60b1-40c9-8034-53b88fcc1f24&quot;,&quot;classificationName&quot;:&quot;测试sy一级分类-测试sy二级分类&quot;},{&quot;id&quot;:&quot;519097014055763968&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;logo1024x1024.png&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;0&quot;,&quot;materialSize&quot;:&quot;279890&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;1&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/b5/1-20250415-b5e63eb8fc80409da955373bab297e31/b5e63eb8fc80409da955373bab297e31.png&quot;,&quot;createTime&quot;:&quot;2025-05-03 10:26:13&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4273,&quot;materialClassification&quot;:&quot;45548650-f874-486a-834b-1936162a07ef&quot;,&quot;classificationName&quot;:&quot;测试sy一级分类-测试sy二级分类&quot;},{&quot;id&quot;:&quot;518734620523659265&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;logo1024x1024.png&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;0&quot;,&quot;materialSize&quot;:&quot;279890&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;1&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/b5/1-20250415-b5e63eb8fc80409da955373bab297e31/b5e63eb8fc80409da955373bab297e31.png&quot;,&quot;createTime&quot;:&quot;2025-05-02 10:26:11&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4273,&quot;materialClassification&quot;:&quot;063806a5-7131-4992-b3d8-55d96dd6c946&quot;,&quot;classificationName&quot;:&quot;测试sy一级分类-测试sy二级分类&quot;},{&quot;id&quot;:&quot;517647457639874561&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;logo1024x1024.png&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;0&quot;,&quot;materialSize&quot;:&quot;279890&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;1&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/b5/1-20250415-b5e63eb8fc80409da955373bab297e31/b5e63eb8fc80409da955373bab297e31.png&quot;,&quot;createTime&quot;:&quot;2025-04-29 10:26:11&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4273,&quot;materialClassification&quot;:&quot;fe438a31-99f4-4589-8ade-b632f14cc8e8&quot;,&quot;classificationName&quot;:&quot;&quot;},{&quot;id&quot;:&quot;517641924509843457&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;logo1024x1024.png&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;0&quot;,&quot;materialSize&quot;:&quot;279890&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;1&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/b5/1-20250415-b5e63eb8fc80409da955373bab297e31/b5e63eb8fc80409da955373bab297e31.png&quot;,&quot;createTime&quot;:&quot;2025-04-29 10:04:12&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4273,&quot;materialClassification&quot;:&quot;3f0ce0ff-781a-413d-825d-581cbb16e179&quot;,&quot;classificationName&quot;:&quot;&quot;},{&quot;id&quot;:&quot;517637408293011457&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;logo1024x1024.png&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;0&quot;,&quot;materialSize&quot;:&quot;279890&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;1&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/b5/1-20250415-b5e63eb8fc80409da955373bab297e31/b5e63eb8fc80409da955373bab297e31.png&quot;,&quot;createTime&quot;:&quot;2025-04-29 09:46:15&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4273,&quot;materialClassification&quot;:&quot;11a1c490-4927-420a-affe-96805ccdd373&quot;,&quot;classificationName&quot;:&quot;&quot;},{&quot;id&quot;:&quot;516215827603836929&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;logo1024x1024.png&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;0&quot;,&quot;materialSize&quot;:&quot;279890&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;1&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/b5/1-20250415-b5e63eb8fc80409da955373bab297e31/b5e63eb8fc80409da955373bab297e31.png&quot;,&quot;createTime&quot;:&quot;2025-04-25 11:37:24&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4273,&quot;materialClassification&quot;:&quot;5a3f9158-3c80-444d-b937-6dc93fe5d3fb&quot;,&quot;classificationName&quot;:&quot;&quot;},{&quot;id&quot;:&quot;516198490188206081&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;logo1024x1024.png&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;0&quot;,&quot;materialSize&quot;:&quot;279890&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;1&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/b5/1-20250415-b5e63eb8fc80409da955373bab297e31/b5e63eb8fc80409da955373bab297e31.png&quot;,&quot;createTime&quot;:&quot;2025-04-25 10:28:31&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4273,&quot;materialClassification&quot;:&quot;686698fa-1e16-48d5-b2de-752d67bf74ee&quot;,&quot;classificationName&quot;:&quot;&quot;}],&quot;total&quot;:28,&quot;size&quot;:10,&quot;current&quot;:1,&quot;orders&quot;:[],&quot;optimizeCountSql&quot;:true,&quot;searchCount&quot;:true,&quot;countId&quot;:&quot;&quot;,&quot;maxLimit&quot;:null,&quot;pages&quot;:3},&quot;version&quot;:&quot;&quot;,&quot;sign&quot;:&quot;&quot;,&quot;errors&quot;:null,&quot;time&quot;:&quot;2025-07-04 10:19:36&quot;}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://111.172.196.67:11002/zb/warehouse/page?materialTitle=logo&amp;materialType=1&amp;pageNum=1&amp;pageSize=10</java.net.URL>
+</httpSample>
+<httpSample t="75" it="0" lt="75" ct="0" ts="1751595493595" s="true" lb="查询视频素材_直播后台管理_直播后台管理接口" rc="200" rm="" tn="直播后台管理 1-1" dt="text" de="UTF-8" by="5234" sby="411" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, PUT, GET, OPTIONS, DELETE
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 04 Jul 2025 02:19:36 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+content-type: application/json;charset=UTF-8
+authorization: Bearer RaOM5KqHhVOek3YvqsYrWhOsufexpFKyRsqdItvTk1TQnyi5SouPYAqH4zG30QFfuVAEHSSHwQjIJKcPXCicv9ZpCwmSKBqFrIb2oZk4kPkmKzdwez0BXEGFarSXBaDG
+Host: 111.172.196.67:11002
+User-Agent: Apache-HttpClient/4.5.14 (Java/1.8.0_144)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:&quot;20001&quot;,&quot;success&quot;:true,&quot;message&quot;:&quot;成功&quot;,&quot;data&quot;:{&quot;records&quot;:[{&quot;id&quot;:&quot;541563399201570816&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;1分半.mp4&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;96.41&quot;,&quot;materialSize&quot;:&quot;16914120&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;2&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/d1/1-20250415-d1feaf0b04b84ef098e2843152f159ab/d1feaf0b04b84ef098e2843152f159ab.mp4&quot;,&quot;createTime&quot;:&quot;2025-07-04 10:19:36&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4274,&quot;materialClassification&quot;:&quot;c3644373-9d40-4620-8232-4923fe4af0fa&quot;,&quot;classificationName&quot;:&quot;测试sy一级分类-测试sy二级分类&quot;},{&quot;id&quot;:&quot;519821783407427585&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;1分半.mp4&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;96.41&quot;,&quot;materialSize&quot;:&quot;16914120&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;2&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/d1/1-20250415-d1feaf0b04b84ef098e2843152f159ab/d1feaf0b04b84ef098e2843152f159ab.mp4&quot;,&quot;createTime&quot;:&quot;2025-05-05 10:26:11&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4274,&quot;materialClassification&quot;:&quot;459e1d88-20b3-4690-8794-1f1ee84d739f&quot;,&quot;classificationName&quot;:&quot;测试sy一级分类-测试sy二级分类&quot;},{&quot;id&quot;:&quot;519459393457258496&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;1分半.mp4&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;96.41&quot;,&quot;materialSize&quot;:&quot;16914120&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;2&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/d1/1-20250415-d1feaf0b04b84ef098e2843152f159ab/d1feaf0b04b84ef098e2843152f159ab.mp4&quot;,&quot;createTime&quot;:&quot;2025-05-04 10:26:10&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4274,&quot;materialClassification&quot;:&quot;02ed9545-60b1-40c9-8034-53b88fcc1f24&quot;,&quot;classificationName&quot;:&quot;测试sy一级分类-测试sy二级分类&quot;},{&quot;id&quot;:&quot;519097014198370305&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;1分半.mp4&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;96.41&quot;,&quot;materialSize&quot;:&quot;16914120&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;2&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/d1/1-20250415-d1feaf0b04b84ef098e2843152f159ab/d1feaf0b04b84ef098e2843152f159ab.mp4&quot;,&quot;createTime&quot;:&quot;2025-05-03 10:26:13&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4274,&quot;materialClassification&quot;:&quot;45548650-f874-486a-834b-1936162a07ef&quot;,&quot;classificationName&quot;:&quot;测试sy一级分类-测试sy二级分类&quot;},{&quot;id&quot;:&quot;518734620670459904&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;1分半.mp4&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;96.41&quot;,&quot;materialSize&quot;:&quot;16914120&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;2&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/d1/1-20250415-d1feaf0b04b84ef098e2843152f159ab/d1feaf0b04b84ef098e2843152f159ab.mp4&quot;,&quot;createTime&quot;:&quot;2025-05-02 10:26:11&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4274,&quot;materialClassification&quot;:&quot;063806a5-7131-4992-b3d8-55d96dd6c946&quot;,&quot;classificationName&quot;:&quot;测试sy一级分类-测试sy二级分类&quot;},{&quot;id&quot;:&quot;516215827729666048&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;1分半.mp4&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;96.41&quot;,&quot;materialSize&quot;:&quot;16914120&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;2&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/d1/1-20250415-d1feaf0b04b84ef098e2843152f159ab/d1feaf0b04b84ef098e2843152f159ab.mp4&quot;,&quot;createTime&quot;:&quot;2025-04-25 11:37:24&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4274,&quot;materialClassification&quot;:&quot;5a3f9158-3c80-444d-b937-6dc93fe5d3fb&quot;,&quot;classificationName&quot;:&quot;&quot;},{&quot;id&quot;:&quot;515932874998984704&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;1分半.mp4&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;96.41&quot;,&quot;materialSize&quot;:&quot;16914120&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;2&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/d1/1-20250415-d1feaf0b04b84ef098e2843152f159ab/d1feaf0b04b84ef098e2843152f159ab.mp4&quot;,&quot;createTime&quot;:&quot;2025-04-24 16:53:03&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4274,&quot;materialClassification&quot;:&quot;53051574-dbb0-4118-9601-0c94b6ce2c74&quot;,&quot;classificationName&quot;:&quot;&quot;},{&quot;id&quot;:&quot;515930415513645057&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;1分半.mp4&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;96.41&quot;,&quot;materialSize&quot;:&quot;16914120&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;2&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/d1/1-20250415-d1feaf0b04b84ef098e2843152f159ab/d1feaf0b04b84ef098e2843152f159ab.mp4&quot;,&quot;createTime&quot;:&quot;2025-04-24 16:43:17&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4274,&quot;materialClassification&quot;:&quot;02093e04-ee2f-44f8-b93d-4b6806d29624&quot;,&quot;classificationName&quot;:&quot;&quot;}],&quot;total&quot;:8,&quot;size&quot;:10,&quot;current&quot;:1,&quot;orders&quot;:[],&quot;optimizeCountSql&quot;:true,&quot;searchCount&quot;:true,&quot;countId&quot;:&quot;&quot;,&quot;maxLimit&quot;:null,&quot;pages&quot;:1},&quot;version&quot;:&quot;&quot;,&quot;sign&quot;:&quot;&quot;,&quot;errors&quot;:null,&quot;time&quot;:&quot;2025-07-04 10:19:36&quot;}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://111.172.196.67:11002/zb/warehouse/page?materialTitle=1分半&amp;materialType=2&amp;pageNum=1&amp;pageSize=10</java.net.URL>
+</httpSample>
+<httpSample t="514" it="0" lt="514" ct="0" ts="1751595493674" s="true" lb="新增直播_直播后台管理_直播后台管理接口" rc="200" rm="" tn="直播后台管理 1-1" dt="text" de="UTF-8" by="2058" sby="566" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, PUT, GET, OPTIONS, DELETE
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 04 Jul 2025 02:19:36 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+content-type: application/json;charset=UTF-8
+authorization: Bearer RaOM5KqHhVOek3YvqsYrWhOsufexpFKyRsqdItvTk1TQnyi5SouPYAqH4zG30QFfuVAEHSSHwQjIJKcPXCicv9ZpCwmSKBqFrIb2oZk4kPkmKzdwez0BXEGFarSXBaDG
+Content-Length: 208
+Host: 111.172.196.67:11002
+User-Agent: Apache-HttpClient/4.5.14 (Java/1.8.0_144)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:&quot;20001&quot;,&quot;success&quot;:true,&quot;message&quot;:&quot;成功&quot;,&quot;data&quot;:{&quot;id&quot;:&quot;541563400627634177&quot;,&quot;userId&quot;:&quot;237759&quot;,&quot;shopName&quot;:&quot;sytest2&quot;,&quot;shopLogo&quot;:&quot;https://hubei-41.zos.ctyun.cn/weijingling/20250407/1744006679010.jpg&quot;,&quot;liveType&quot;:1,&quot;theme&quot;:&quot;测试sy新增直播&quot;,&quot;liveName&quot;:&quot;weijingling541563400627634177&quot;,&quot;intro&quot;:&quot;&quot;,&quot;openTime&quot;:null,&quot;closeTime&quot;:null,&quot;expiredTime&quot;:&quot;2025-07-05 10:19:36&quot;,&quot;effective&quot;:24,&quot;duration&quot;:0,&quot;pushUrl&quot;:&quot;rtmp://ahgypush.tv189.com:1936/livegw/85426dba83&quot;,&quot;pullUrl&quot;:&quot;http://wjlpull.hnxuguo.cn/livegw/148bfb6fde.flv&quot;,&quot;chatNum&quot;:&quot;0&quot;,&quot;totalMoney&quot;:null,&quot;status&quot;:1,&quot;liveRankList&quot;:null,&quot;groupId&quot;:&quot;@TGS#aNCFW3ERI&quot;,&quot;isFollowShop&quot;:null,&quot;isAdmin&quot;:null,&quot;currentUserInfo&quot;:null,&quot;liveAddress&quot;:&quot;&quot;,&quot;liveCityName&quot;:&quot;&quot;,&quot;goodsData&quot;:null,&quot;goodsNum&quot;:0,&quot;thumb&quot;:&quot;https://hubei-41.zos.ctyun.cn/weijingling/20250423/1745376491410.png&quot;,&quot;shopId&quot;:&quot;509733563781025792&quot;,&quot;preOpenTime&quot;:&quot;2025-07-04 10:18:13&quot;,&quot;nickname&quot;:&quot;树的杨&quot;,&quot;avatar&quot;:&quot;https://hubei-41.zos.ctyun.cn/weijingling/20250421/1745219497373.jpeg&quot;,&quot;signInter&quot;:20,&quot;signScore&quot;:&quot;5&quot;,&quot;seekInter&quot;:30,&quot;seekScore&quot;:&quot;10&quot;,&quot;userShare&quot;:0,&quot;signShowTime&quot;:2,&quot;signNum&quot;:0,&quot;previewUrl&quot;:&quot;http://ahgypush.tv189.com/livegw/85426dba83.flv&quot;,&quot;pullUrlRtmp&quot;:&quot;rtmp://wjlpull.hnxuguo.cn/livegw/148bfb6fde&quot;,&quot;pullUrlHls&quot;:&quot;http://wjlpull.hnxuguo.cn/livegw/148bfb6fde.m3u8&quot;,&quot;liveScreen&quot;:&quot;2&quot;,&quot;preOpenTimeSec&quot;:null,&quot;liveRecordEnable&quot;:0,&quot;liveRecordStatus&quot;:null,&quot;recordPlayUrl&quot;:&quot;&quot;,&quot;inviteRankOpen&quot;:0,&quot;progressBarOpen&quot;:0,&quot;pauseOpen&quot;:0,&quot;definition&quot;:null},&quot;version&quot;:&quot;&quot;,&quot;sign&quot;:&quot;&quot;,&quot;errors&quot;:null,&quot;time&quot;:&quot;2025-07-04 10:19:36&quot;}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;theme&quot;:&quot;测试sy新增直播&quot;,&#xd;
+&quot;preOpenTime&quot;:&quot;2025-07-04 10:18:13&quot;,&#xd;
+&quot;status&quot;:0,&#xd;
+&quot;liveScreen&quot;:2,&#xd;
+&quot;liveType&quot;:&quot;1&quot;,&#xd;
+&quot;liveRecordEnable&quot;:0,&#xd;
+&quot;liveRecordType&quot;:&quot;0&quot;,&#xd;
+&quot;thumb&quot;: null,&#xd;
+&quot;liveHotCompute&quot;:&quot;100&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>http://111.172.196.67:11002/live/live/add</java.net.URL>
+</httpSample>
+<httpSample t="99" it="0" lt="99" ct="0" ts="1751595494190" s="true" lb="修改直播_直播后台管理_直播后台管理接口" rc="200" rm="" tn="直播后台管理 1-1" dt="text" de="UTF-8" by="2007" sby="740" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>JSON断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, PUT, GET, OPTIONS, DELETE
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 04 Jul 2025 02:19:36 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+content-type: application/json;charset=UTF-8
+authorization: Bearer RaOM5KqHhVOek3YvqsYrWhOsufexpFKyRsqdItvTk1TQnyi5SouPYAqH4zG30QFfuVAEHSSHwQjIJKcPXCicv9ZpCwmSKBqFrIb2oZk4kPkmKzdwez0BXEGFarSXBaDG
+Content-Length: 381
+Host: 111.172.196.67:11002
+User-Agent: Apache-HttpClient/4.5.14 (Java/1.8.0_144)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:&quot;20001&quot;,&quot;success&quot;:true,&quot;message&quot;:&quot;成功&quot;,&quot;data&quot;:{&quot;id&quot;:&quot;541563400627634177&quot;,&quot;imGroupId&quot;:&quot;&quot;,&quot;userId&quot;:null,&quot;allowUserId&quot;:null,&quot;shopId&quot;:null,&quot;shopName&quot;:&quot;&quot;,&quot;shopLogo&quot;:&quot;&quot;,&quot;avatar&quot;:&quot;&quot;,&quot;nickName&quot;:&quot;&quot;,&quot;thumb&quot;:&quot;&quot;,&quot;theme&quot;:&quot;测试sy直播&quot;,&quot;intro&quot;:&quot;&quot;,&quot;liveName&quot;:&quot;&quot;,&quot;openTime&quot;:null,&quot;closeTime&quot;:null,&quot;expiredTime&quot;:null,&quot;effective&quot;:24,&quot;duration&quot;:0,&quot;pushUrl&quot;:&quot;&quot;,&quot;pullUrl&quot;:&quot;&quot;,&quot;chatNum&quot;:null,&quot;totalMoney&quot;:null,&quot;status&quot;:null,&quot;cutInfo&quot;:&quot;&quot;,&quot;isErrorClose&quot;:null,&quot;errorCloseTime&quot;:null,&quot;classifyId&quot;:&quot;541563396273946625&quot;,&quot;liveType&quot;:1,&quot;liveAddress&quot;:&quot;&quot;,&quot;liveCityName&quot;:&quot;&quot;,&quot;redPacketExpiredTime&quot;:null,&quot;preOpenTime&quot;:&quot;2025-07-04 10:18:14&quot;,&quot;redPacketBeginTime&quot;:null,&quot;createTime&quot;:null,&quot;updateTime&quot;:null,&quot;creator&quot;:null,&quot;modifier&quot;:null,&quot;isDeleted&quot;:null,&quot;remark&quot;:&quot;&quot;,&quot;liveScreen&quot;:&quot;&quot;,&quot;liveId&quot;:&quot;&quot;,&quot;channelId&quot;:&quot;&quot;,&quot;thirdLiveInfo&quot;:&quot;&quot;,&quot;signInter&quot;:null,&quot;signScore&quot;:null,&quot;signNum&quot;:null,&quot;signShowTime&quot;:null,&quot;seekInter&quot;:null,&quot;seekScore&quot;:null,&quot;userShare&quot;:null,&quot;previewUrl&quot;:&quot;&quot;,&quot;pullUrlRtmp&quot;:&quot;&quot;,&quot;pullUrlHls&quot;:&quot;&quot;,&quot;bitRate&quot;:null,&quot;flow&quot;:null,&quot;redisLiveStatus&quot;:null,&quot;materialId&quot;:null,&quot;liveRecordEnable&quot;:null,&quot;liveRecordStatus&quot;:null,&quot;liveRecordStartTime&quot;:null,&quot;liveRecordEndTime&quot;:null,&quot;recordDuration&quot;:null,&quot;recordFlow&quot;:null,&quot;recordPlayUrl&quot;:&quot;&quot;,&quot;liveIsClac&quot;:null,&quot;recordLiveIsClac&quot;:null,&quot;liveRecordType&quot;:null,&quot;liveHotCompute&quot;:null,&quot;saveMaterial&quot;:null,&quot;inviteRankOpen&quot;:null,&quot;progressBarOpen&quot;:null,&quot;pauseOpen&quot;:null,&quot;definition&quot;:null,&quot;muteAllGroup&quot;:&quot;&quot;},&quot;version&quot;:&quot;&quot;,&quot;sign&quot;:&quot;&quot;,&quot;errors&quot;:null,&quot;time&quot;:&quot;2025-07-04 10:19:36&quot;}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;id&quot;:&quot;541563400627634177&quot;,&#xd;
+	&quot;thumb&quot;:&quot;&quot;,&#xd;
+	&quot;theme&quot;:&quot;测试sy直播&quot;,&#xd;
+	&quot;intro&quot;:&quot;&quot;,&#xd;
+	&quot;openTime&quot;:null,&#xd;
+	&quot;preOpenTime&quot;:&quot;2025-07-04 10:18:14&quot;,&#xd;
+	&quot;closeTime&quot;:null,&#xd;
+	&quot;expiredTime&quot;:null,&#xd;
+	&quot;effective&quot;:24,&#xd;
+	&quot;duration&quot;:0,&#xd;
+	&quot;errorCloseTime&quot;:null,&#xd;
+	&quot;classifyId&quot;:&quot;541563396273946625&quot;,&#xd;
+	&quot;liveType&quot;:1,&#xd;
+	&quot;liveAddress&quot;:&quot;&quot;,&#xd;
+	&quot;liveCityName&quot;:&quot;&quot;,&#xd;
+	&quot;mediaAddress&quot;:&quot;&quot;,&#xd;
+	&quot;mediaTitle&quot;:&quot;&quot;&#xd;
+}</queryString>
+  <java.net.URL>http://111.172.196.67:11002/live/live/edit</java.net.URL>
+</httpSample>
+<httpSample t="323" it="0" lt="323" ct="0" ts="1751595494290" s="true" lb="新增循环伪直播_直播后台管理_直播后台管理接口" rc="200" rm="" tn="直播后台管理 1-1" dt="text" de="UTF-8" by="2225" sby="697" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>JSON断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, PUT, GET, OPTIONS, DELETE
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 04 Jul 2025 02:19:36 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+content-type: application/json;charset=UTF-8
+authorization: Bearer RaOM5KqHhVOek3YvqsYrWhOsufexpFKyRsqdItvTk1TQnyi5SouPYAqH4zG30QFfuVAEHSSHwQjIJKcPXCicv9ZpCwmSKBqFrIb2oZk4kPkmKzdwez0BXEGFarSXBaDG
+Content-Length: 329
+Host: 111.172.196.67:11002
+User-Agent: Apache-HttpClient/4.5.14 (Java/1.8.0_144)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:&quot;20001&quot;,&quot;success&quot;:true,&quot;message&quot;:&quot;成功&quot;,&quot;data&quot;:{&quot;id&quot;:&quot;541563403005804545&quot;,&quot;userId&quot;:&quot;237759&quot;,&quot;shopName&quot;:&quot;sytest2&quot;,&quot;shopLogo&quot;:&quot;https://hubei-41.zos.ctyun.cn/weijingling/20250407/1744006679010.jpg&quot;,&quot;liveType&quot;:2,&quot;theme&quot;:&quot;测试sy循环伪直播&quot;,&quot;liveName&quot;:&quot;weijingling541563403005804545&quot;,&quot;intro&quot;:&quot;&quot;,&quot;openTime&quot;:null,&quot;closeTime&quot;:null,&quot;expiredTime&quot;:&quot;2025-07-04 10:28:14&quot;,&quot;effective&quot;:24,&quot;duration&quot;:0,&quot;pushUrl&quot;:&quot;/home/disk/media_storage/default/20250424/9a/1-20250424-9a104a0ebb044ed99f9b2fbe9153b94f/9a104a0ebb044ed99f9b2fbe9153b94f.mp4&quot;,&quot;pullUrl&quot;:&quot;http://wjlpull.hnxuguo.cn/livegw/8fcada24ed.flv&quot;,&quot;chatNum&quot;:&quot;0&quot;,&quot;totalMoney&quot;:null,&quot;status&quot;:1,&quot;liveRankList&quot;:null,&quot;groupId&quot;:&quot;@TGS#aOFFW3ERM&quot;,&quot;isFollowShop&quot;:null,&quot;isAdmin&quot;:null,&quot;currentUserInfo&quot;:null,&quot;liveAddress&quot;:&quot;&quot;,&quot;liveCityName&quot;:&quot;&quot;,&quot;goodsData&quot;:null,&quot;goodsNum&quot;:0,&quot;thumb&quot;:&quot;https://hubei-41.zos.ctyun.cn/weijingling/20250423/1745376491410.png&quot;,&quot;shopId&quot;:&quot;509733563781025792&quot;,&quot;preOpenTime&quot;:&quot;2025-07-04 10:19:14&quot;,&quot;nickname&quot;:&quot;树的杨&quot;,&quot;avatar&quot;:&quot;https://hubei-41.zos.ctyun.cn/weijingling/20250421/1745219497373.jpeg&quot;,&quot;signInter&quot;:20,&quot;signScore&quot;:&quot;5&quot;,&quot;seekInter&quot;:30,&quot;seekScore&quot;:&quot;10&quot;,&quot;userShare&quot;:0,&quot;signShowTime&quot;:2,&quot;signNum&quot;:0,&quot;previewUrl&quot;:&quot;/home/disk/media_storage/default/20250424/9a/1-20250424-9a104a0ebb044ed99f9b2fbe9153b94f/9a104a0ebb044ed99f9b2fbe9153b94f.mp4&quot;,&quot;pullUrlRtmp&quot;:&quot;rtmp://wjlpull.hnxuguo.cn/livegw/8fcada24ed&quot;,&quot;pullUrlHls&quot;:&quot;http://wjlpull.hnxuguo.cn/livegw/8fcada24ed.m3u8&quot;,&quot;liveScreen&quot;:&quot;2&quot;,&quot;preOpenTimeSec&quot;:null,&quot;liveRecordEnable&quot;:null,&quot;liveRecordStatus&quot;:null,&quot;recordPlayUrl&quot;:&quot;&quot;,&quot;inviteRankOpen&quot;:0,&quot;progressBarOpen&quot;:null,&quot;pauseOpen&quot;:null,&quot;definition&quot;:null},&quot;version&quot;:&quot;&quot;,&quot;sign&quot;:&quot;&quot;,&quot;errors&quot;:null,&quot;time&quot;:&quot;2025-07-04 10:19:37&quot;}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+&#xd;
+	&quot;theme&quot;:&quot;测试sy循环伪直播&quot;,&#xd;
+	&quot;intro&quot;:null,&#xd;
+	&quot;liveName&quot;:null,&#xd;
+	&quot;openTime&quot;:null,&#xd;
+	&quot;preOpenTime&quot;:&quot;2025-07-04 10:19:14&quot;,&#xd;
+	&quot;preEndTime&quot;:&quot;2025-07-04 10:28:14&quot;,&#xd;
+	&quot;status&quot;:0,&#xd;
+	&quot;liveScreen&quot;:2,&#xd;
+	&quot;materialId&quot;:&quot;515900206957637632&quot;,&#xd;
+	&quot;liveType&quot;:&quot;2&quot;,&#xd;
+	&quot;liveRecordEnable&quot;:0,&#xd;
+	&quot;liveRecordType&quot;:&quot;0&quot;,&#xd;
+	&quot;saveMaterial&quot;:1&#xd;
+	}</queryString>
+  <java.net.URL>http://111.172.196.67:11002/live/live/addRecordLive</java.net.URL>
+</httpSample>
+<httpSample t="70" it="0" lt="70" ct="0" ts="1751595494616" s="true" lb="查询素材" rc="200" rm="" tn="直播后台管理 1-1" dt="text" de="UTF-8" by="5234" sby="497" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, PUT, GET, OPTIONS, DELETE
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 04 Jul 2025 02:19:37 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+content-type: application/json;charset=UTF-8
+authorization: Bearer RaOM5KqHhVOek3YvqsYrWhOsufexpFKyRsqdItvTk1TQnyi5SouPYAqH4zG30QFfuVAEHSSHwQjIJKcPXCicv9ZpCwmSKBqFrIb2oZk4kPkmKzdwez0BXEGFarSXBaDG
+Host: 111.172.196.67:11002
+User-Agent: Apache-HttpClient/4.5.14 (Java/1.8.0_144)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:&quot;20001&quot;,&quot;success&quot;:true,&quot;message&quot;:&quot;成功&quot;,&quot;data&quot;:{&quot;records&quot;:[{&quot;id&quot;:&quot;541563399201570816&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;1分半.mp4&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;96.41&quot;,&quot;materialSize&quot;:&quot;16914120&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;2&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/d1/1-20250415-d1feaf0b04b84ef098e2843152f159ab/d1feaf0b04b84ef098e2843152f159ab.mp4&quot;,&quot;createTime&quot;:&quot;2025-07-04 10:19:36&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4274,&quot;materialClassification&quot;:&quot;c3644373-9d40-4620-8232-4923fe4af0fa&quot;,&quot;classificationName&quot;:&quot;测试sy一级分类-测试sy二级分类&quot;},{&quot;id&quot;:&quot;519821783407427585&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;1分半.mp4&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;96.41&quot;,&quot;materialSize&quot;:&quot;16914120&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;2&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/d1/1-20250415-d1feaf0b04b84ef098e2843152f159ab/d1feaf0b04b84ef098e2843152f159ab.mp4&quot;,&quot;createTime&quot;:&quot;2025-05-05 10:26:11&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4274,&quot;materialClassification&quot;:&quot;459e1d88-20b3-4690-8794-1f1ee84d739f&quot;,&quot;classificationName&quot;:&quot;测试sy一级分类-测试sy二级分类&quot;},{&quot;id&quot;:&quot;519459393457258496&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;1分半.mp4&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;96.41&quot;,&quot;materialSize&quot;:&quot;16914120&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;2&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/d1/1-20250415-d1feaf0b04b84ef098e2843152f159ab/d1feaf0b04b84ef098e2843152f159ab.mp4&quot;,&quot;createTime&quot;:&quot;2025-05-04 10:26:10&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4274,&quot;materialClassification&quot;:&quot;02ed9545-60b1-40c9-8034-53b88fcc1f24&quot;,&quot;classificationName&quot;:&quot;测试sy一级分类-测试sy二级分类&quot;},{&quot;id&quot;:&quot;519097014198370305&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;1分半.mp4&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;96.41&quot;,&quot;materialSize&quot;:&quot;16914120&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;2&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/d1/1-20250415-d1feaf0b04b84ef098e2843152f159ab/d1feaf0b04b84ef098e2843152f159ab.mp4&quot;,&quot;createTime&quot;:&quot;2025-05-03 10:26:13&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4274,&quot;materialClassification&quot;:&quot;45548650-f874-486a-834b-1936162a07ef&quot;,&quot;classificationName&quot;:&quot;测试sy一级分类-测试sy二级分类&quot;},{&quot;id&quot;:&quot;518734620670459904&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;1分半.mp4&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;96.41&quot;,&quot;materialSize&quot;:&quot;16914120&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;2&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/d1/1-20250415-d1feaf0b04b84ef098e2843152f159ab/d1feaf0b04b84ef098e2843152f159ab.mp4&quot;,&quot;createTime&quot;:&quot;2025-05-02 10:26:11&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4274,&quot;materialClassification&quot;:&quot;063806a5-7131-4992-b3d8-55d96dd6c946&quot;,&quot;classificationName&quot;:&quot;测试sy一级分类-测试sy二级分类&quot;},{&quot;id&quot;:&quot;516215827729666048&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;1分半.mp4&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;96.41&quot;,&quot;materialSize&quot;:&quot;16914120&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;2&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/d1/1-20250415-d1feaf0b04b84ef098e2843152f159ab/d1feaf0b04b84ef098e2843152f159ab.mp4&quot;,&quot;createTime&quot;:&quot;2025-04-25 11:37:24&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4274,&quot;materialClassification&quot;:&quot;5a3f9158-3c80-444d-b937-6dc93fe5d3fb&quot;,&quot;classificationName&quot;:&quot;&quot;},{&quot;id&quot;:&quot;515932874998984704&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;1分半.mp4&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;96.41&quot;,&quot;materialSize&quot;:&quot;16914120&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;2&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/d1/1-20250415-d1feaf0b04b84ef098e2843152f159ab/d1feaf0b04b84ef098e2843152f159ab.mp4&quot;,&quot;createTime&quot;:&quot;2025-04-24 16:53:03&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4274,&quot;materialClassification&quot;:&quot;53051574-dbb0-4118-9601-0c94b6ce2c74&quot;,&quot;classificationName&quot;:&quot;&quot;},{&quot;id&quot;:&quot;515930415513645057&quot;,&quot;materialCover&quot;:&quot;&quot;,&quot;materialTitle&quot;:&quot;1分半.mp4&quot;,&quot;materialSource&quot;:1,&quot;materialTime&quot;:&quot;96.41&quot;,&quot;materialSize&quot;:&quot;16914120&quot;,&quot;materialRate&quot;:&quot;&quot;,&quot;materialType&quot;:&quot;2&quot;,&quot;materialWebAddress&quot;:&quot;https://tywjmvod.tv189.com/media/storage/default/20250415/d1/1-20250415-d1feaf0b04b84ef098e2843152f159ab/d1feaf0b04b84ef098e2843152f159ab.mp4&quot;,&quot;createTime&quot;:&quot;2025-04-24 16:43:17&quot;,&quot;userId&quot;:391,&quot;createName&quot;:&quot;shop18510001000&quot;,&quot;shopId&quot;:4274,&quot;materialClassification&quot;:&quot;02093e04-ee2f-44f8-b93d-4b6806d29624&quot;,&quot;classificationName&quot;:&quot;&quot;}],&quot;total&quot;:8,&quot;size&quot;:10,&quot;current&quot;:1,&quot;orders&quot;:[],&quot;optimizeCountSql&quot;:true,&quot;searchCount&quot;:true,&quot;countId&quot;:&quot;&quot;,&quot;maxLimit&quot;:null,&quot;pages&quot;:1},&quot;version&quot;:&quot;&quot;,&quot;sign&quot;:&quot;&quot;,&quot;errors&quot;:null,&quot;time&quot;:&quot;2025-07-04 10:19:37&quot;}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://111.172.196.67:11002/zb/warehouse/page?goodsType=1&amp;materialType=2&amp;materialClassification=&amp;materialTitle=1%E5%88%86%E5%8D%8A&amp;status=1&amp;pageNum=1&amp;pageSize=10&amp;categoryId=&amp;createName=&amp;createBeginTime=</java.net.URL>
+</httpSample>
+<httpSample t="242" it="0" lt="242" ct="0" ts="1751595494689" s="true" lb="新增伪直播_直播后台管理_直播后台管理接口" rc="200" rm="" tn="直播后台管理 1-1" dt="text" de="UTF-8" by="2219" sby="834" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>JSON断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, PUT, GET, OPTIONS, DELETE
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 04 Jul 2025 02:19:37 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+content-type: application/json;charset=UTF-8
+authorization: Bearer RaOM5KqHhVOek3YvqsYrWhOsufexpFKyRsqdItvTk1TQnyi5SouPYAqH4zG30QFfuVAEHSSHwQjIJKcPXCicv9ZpCwmSKBqFrIb2oZk4kPkmKzdwez0BXEGFarSXBaDG
+Content-Length: 463
+Host: 111.172.196.67:11002
+User-Agent: Apache-HttpClient/4.5.14 (Java/1.8.0_144)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:&quot;20001&quot;,&quot;success&quot;:true,&quot;message&quot;:&quot;成功&quot;,&quot;data&quot;:{&quot;id&quot;:&quot;541563404561891328&quot;,&quot;userId&quot;:&quot;237759&quot;,&quot;shopName&quot;:&quot;sytest2&quot;,&quot;shopLogo&quot;:&quot;https://hubei-41.zos.ctyun.cn/weijingling/20250407/1744006679010.jpg&quot;,&quot;liveType&quot;:3,&quot;theme&quot;:&quot;测试sy伪直播&quot;,&quot;liveName&quot;:&quot;weijingling541563404561891328&quot;,&quot;intro&quot;:&quot;&quot;,&quot;openTime&quot;:null,&quot;closeTime&quot;:null,&quot;expiredTime&quot;:&quot;2025-07-04 10:21:20&quot;,&quot;effective&quot;:24,&quot;duration&quot;:0,&quot;pushUrl&quot;:&quot;/home/disk/media_storage/default/20250423/38/1-20250423-388ab0a82497499a9f8b82d4a53ff5ec/388ab0a82497499a9f8b82d4a53ff5ec.mp4&quot;,&quot;pullUrl&quot;:&quot;http://wjlpull.hnxuguo.cn/livegw/809025cde8.flv&quot;,&quot;chatNum&quot;:&quot;0&quot;,&quot;totalMoney&quot;:null,&quot;status&quot;:1,&quot;liveRankList&quot;:null,&quot;groupId&quot;:&quot;@TGS#aFHFW3ERF&quot;,&quot;isFollowShop&quot;:null,&quot;isAdmin&quot;:null,&quot;currentUserInfo&quot;:null,&quot;liveAddress&quot;:&quot;&quot;,&quot;liveCityName&quot;:&quot;&quot;,&quot;goodsData&quot;:null,&quot;goodsNum&quot;:0,&quot;thumb&quot;:&quot;https://hubei-41.zos.ctyun.cn/weijingling/20250425/1745546308507.png&quot;,&quot;shopId&quot;:&quot;509733563781025792&quot;,&quot;preOpenTime&quot;:&quot;2025-07-04 10:19:14&quot;,&quot;nickname&quot;:&quot;树的杨&quot;,&quot;avatar&quot;:&quot;https://hubei-41.zos.ctyun.cn/weijingling/20250421/1745219497373.jpeg&quot;,&quot;signInter&quot;:20,&quot;signScore&quot;:&quot;5&quot;,&quot;seekInter&quot;:30,&quot;seekScore&quot;:&quot;10&quot;,&quot;userShare&quot;:0,&quot;signShowTime&quot;:2,&quot;signNum&quot;:0,&quot;previewUrl&quot;:&quot;/home/disk/media_storage/default/20250423/38/1-20250423-388ab0a82497499a9f8b82d4a53ff5ec/388ab0a82497499a9f8b82d4a53ff5ec.mp4&quot;,&quot;pullUrlRtmp&quot;:&quot;rtmp://wjlpull.hnxuguo.cn/livegw/809025cde8&quot;,&quot;pullUrlHls&quot;:&quot;http://wjlpull.hnxuguo.cn/livegw/809025cde8.m3u8&quot;,&quot;liveScreen&quot;:&quot;2&quot;,&quot;preOpenTimeSec&quot;:null,&quot;liveRecordEnable&quot;:null,&quot;liveRecordStatus&quot;:null,&quot;recordPlayUrl&quot;:&quot;&quot;,&quot;inviteRankOpen&quot;:0,&quot;progressBarOpen&quot;:null,&quot;pauseOpen&quot;:null,&quot;definition&quot;:null},&quot;version&quot;:&quot;&quot;,&quot;sign&quot;:&quot;&quot;,&quot;errors&quot;:null,&quot;time&quot;:&quot;2025-07-04 10:19:37&quot;}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;goodsList&quot;:[],&quot;id&quot;:null,&quot;imGroupId&quot;:null,&quot;userId&quot;:null,&quot;shopId&quot;:null,&quot;shopName&quot;:null,&quot;shopLogo&quot;:null,&#xd;
+	&quot;thumb&quot;:&quot;https://hubei-41.zos.ctyun.cn/weijingling/20250425/1745546308507.png&quot;,&#xd;
+	&quot;theme&quot;:&quot;测试sy伪直播&quot;,&#xd;
+	&quot;intro&quot;:null,&quot;liveName&quot;:null,&quot;openTime&quot;:null,&#xd;
+	&quot;preOpenTime&quot;:&quot;2025-07-04 10:19:14&quot;,&#xd;
+	&quot;status&quot;:0,&#xd;
+	&quot;liveScreen&quot;:2,&#xd;
+	&quot;materialId&quot;:&quot;515540642231914496&quot;,&#xd;
+	&quot;liveType&quot;:&quot;3&quot;,&#xd;
+	&quot;liveRecordEnable&quot;:0,&#xd;
+	&quot;liveRecordType&quot;:&quot;0&quot;,&#xd;
+	&quot;saveMaterial&quot;:1&#xd;
+}</queryString>
+  <java.net.URL>http://111.172.196.67:11002/live/live/addPreRecordLive</java.net.URL>
+</httpSample>
+<httpSample t="62" it="0" lt="61" ct="0" ts="1751595494934" s="false" lb="直播列表查询1_直播后台管理_直播后台管理接口" rc="200" rm="" tn="直播后台管理 1-1" dt="text" de="UTF-8" by="805" sby="442" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>JSON断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>No results for path: $[&apos;data&apos;][&apos;records&apos;][0][&apos;id&apos;]</failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, PUT, GET, OPTIONS, DELETE
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Credentials: true
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 04 Jul 2025 02:19:37 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+content-type: application/json;charset=UTF-8
+authorization: Bearer RaOM5KqHhVOek3YvqsYrWhOsufexpFKyRsqdItvTk1TQnyi5SouPYAqH4zG30QFfuVAEHSSHwQjIJKcPXCicv9ZpCwmSKBqFrIb2oZk4kPkmKzdwez0BXEGFarSXBaDG
+Host: 111.172.196.67:11002
+User-Agent: Apache-HttpClient/4.5.14 (Java/1.8.0_144)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:&quot;20001&quot;,&quot;success&quot;:true,&quot;message&quot;:&quot;成功&quot;,&quot;data&quot;:{&quot;records&quot;:[],&quot;total&quot;:0,&quot;size&quot;:10,&quot;current&quot;:1,&quot;orders&quot;:[],&quot;optimizeCountSql&quot;:true,&quot;searchCount&quot;:true,&quot;countId&quot;:&quot;&quot;,&quot;maxLimit&quot;:null,&quot;pages&quot;:0},&quot;version&quot;:&quot;&quot;,&quot;sign&quot;:&quot;&quot;,&quot;errors&quot;:null,&quot;time&quot;:&quot;2025-07-04 10:19:37&quot;}</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://111.172.196.67:11002/live/live/page?theme=测试&amp;status=1&amp;classifyId=541563396273946625&amp;liveRecordEnable=0&amp;pageNum=1&amp;pageSize=10</java.net.URL>
+</httpSample>
+
+</testResults>

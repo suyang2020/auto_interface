@@ -1,0 +1,54 @@
+<tr valign="top" class="">
+    <td align="center">
+           <span>
+             <b>{nums}</b>
+           </span>
+    </td>
+    <td align="left"><span>
+             <b>{systemName}</b>
+           </span></td>
+    <td align="left"><span>
+             <b>{functionModule}</b>
+           </span></td>
+    <td align="left">
+           <span>
+             <b>{name}</b>
+           </span>
+    </td>
+    <td align="left">{url}</td>
+    <td align="center" name="{result}"></td>
+    <td align="center">
+        <a href="javascript:change('page_details_{nums}')">
+            <input style="border:none;background-color: #2674A6;width: 25px;height: 18px;color:#ffffff;"
+                   alt="expand/collapse" src="expand.png" id="page_details_{nums}_image" type="button" value="▼">
+        </a>
+    </td>
+</tr>
+<tr class="page_details" id="page_details_{nums}">
+    <td bgcolor="#FF0000" colspan="8">
+        <div align="center">
+            <b>{name}</b>
+            <table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000"
+                   style="table-layout: fixed;">
+                <tbody>
+                <tr>
+                    <th width="5%">请求类型</th>
+                    <th width="15%">消息头</th>
+                    <th width="20%">参数</th>
+                    <th width="20%">Body</th>
+                    <th width="20%">实际值</th>
+                    <th width="20%">失败信息</th>
+                </tr>
+                <tr>
+                    <td style="word-break:break-all;vertical-align:top;">{method}</td>
+                    <td style="word-break:break-all;vertical-align:top;">{requestHeader}</td>
+                    <td style="word-break:break-all;vertical-align:top;">/</td>
+                    <td style="word-break:break-all;vertical-align:top;">{queryString}</td>
+                    <td style="word-break:break-all;vertical-align:top;">{responseData}</td>
+                    <td style="word-break:break-all;vertical-align:top;">/</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </td>
+</tr>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试报告</title>
+</head>
+<body>
+<div style="background-color:#ECECEC; padding: 35px;">
+    <table cellpadding="0" align="center"
+           style="width: 600px; margin: 0px auto; text-align: left; position: relative; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; font-size: 14px; font-family:微软雅黑, 黑体; line-height: 1.5; box-shadow: rgb(153, 153, 153) 0px 0px 5px; border-collapse: collapse; background-position: initial initial; background-repeat: initial initial;background:#fff;">
+        <tbody>
+        <tr align="center">
+            <th valign="middle"
+                style="height:25px; line-height: 25px; padding: 5px 35px; border-bottom-width: 0px; border-bottom-style: solid; background-color: #009dd9; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">
+                <font face="微软雅黑" size="2" style="color: rgb(255, 255, 255); "><a
+                        href="https://www.medbanks.cn/">思派集团(https://www.medbanks.cn/)</a></font>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <div style="padding:25px 35px 40px; background-color:#F2F2F2;">
+                    <div align="center">
+                        <font style='font-family:微软雅黑;font-size:30px;font-weight:normal;text-decoration:none;color:#31c5ff;'><strong>{subject_info}</strong></font>
+                    </div>
+                    <div style="padding:15px 25px 30px; background-color:#ffffff;">
+                        <h2 style="margin: 5px 0px; "><font color="#333333" style="line-height: 20px; "><font
+                                style="line-height: 22px; " size="4">Dear All：</font></font></h2>
+                        <!--<p style="text-indent:2em;">您好，这是{subject_info}概要，点击查看<a-->
+                        <!--href="{report_url}">报告详情</a>。</p>-->
+                        <p style="text-indent:2em;">您好，这是{subject_info}概要，点击附件查看报告详情</a>。</p>
+                        <div>
+                            <hr size="1" width="100%">
+                            <table align="center" class="details" border=0 cellpadding=5 cellspacing=2 width=100%>
+                                <tr style="HEIGHT: 27pt; mso-height-source: userset" height=36>
+                                    <td style="color: #ffffff;font-weight: bold;text-align: center;background: #2674a6;white-space: nowrap;">
+                                        总计
+                                    </td>
+                                    <td style="color: #ffffff;font-weight: bold;text-align: center;background: #2674a6;white-space: nowrap;">
+                                        通过数
+                                    </td>
+                                    <td style="color: #ffffff;font-weight: bold;text-align: center;background: #2674a6;white-space: nowrap;">
+                                        失败数
+                                    </td>
+                                    <td style="color: #ffffff;font-weight: bold;text-align: center;background: #2674a6;white-space: nowrap;">
+                                        通过率
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td align="center" style="background: #eeeee0;white-space: nowrap;">{total}</td>
+                                    <td align="center" style="background: #eeeee0;white-space: nowrap;">{passed}</td>
+                                    <td align="center" style="background: #eeeee0;white-space: nowrap;">{failed}</td>
+                                    <td align="center" style="background: #eeeee0;white-space: nowrap;">{pass_rate}%
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p align="right">基础平台部</p>
+                        <p align="right">{current_time}</p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+# 1. 清理旧文件和目录
+Remove-Item -ErrorAction SilentlyContinue results.jtl
+Remove-Item -Recurse -Force -ErrorAction SilentlyContinue ./report
+
+# 2. 运行测试并生成报告
+jmeter -Jjmeter.save.saveservice.output_format=csv -n -t E:\works\auto_interface\script\auto_test_live.jmx -l results.jtl -e -o ./report
+
+
+
+jmeter -n -t E:\works\auto_interface\script\auto_test_live.jmx -l E:\works\auto_interface\script\result1.jtl -R 192.168.18.100 -e -o E:\works\auto_interface\script\report -Jjmeter.save.saveservice.output_format=csv
+
+
+
+
+jmeter -n -t E:\works\auto_interface\script\auto_test_live.jmx `
+-l E:\works\auto_interface\script\result1.jtl `
+-R 192.168.18.100,192.168.18.65,192.168.18.98 `
+-Dsun.rmi.transport.tcp.responseTimeout=60000 `
+-Dsun.rmi.transport.proxy.connectTimeout=60000 `
+-Dsun.rmi.transport.tcp.handshakeTimeout=60000 `
+-Djmeter.rmi.packet.size=2000000 `
+-j b.log
